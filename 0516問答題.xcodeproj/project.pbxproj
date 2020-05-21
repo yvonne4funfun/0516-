@@ -14,6 +14,7 @@
 		47441A6C2474103800D32271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47441A6A2474103800D32271 /* LaunchScreen.storyboard */; };
 		47441A772474103900D32271 /* _516___Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47441A762474103900D32271 /* _516___Tests.swift */; };
 		47441A822474103900D32271 /* _516___UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47441A812474103900D32271 /* _516___UITests.swift */; };
+		47441A90247412BC00D32271 /* questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47441A8F247412BB00D32271 /* questions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		47441A7D2474103900D32271 /* 0516問答題UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "0516問答題UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47441A812474103900D32271 /* _516___UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_516___UITests.swift"; sourceTree = "<group>"; };
 		47441A832474103900D32271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47441A8F247412BB00D32271 /* questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				47441A612474102D00D32271 /* AppDelegate.swift */,
 				47441A632474102D00D32271 /* ViewController.swift */,
 				47441A652474102D00D32271 /* Main.storyboard */,
+				47441A8F247412BB00D32271 /* questions.swift */,
 				47441A682474103800D32271 /* Assets.xcassets */,
 				47441A6A2474103800D32271 /* LaunchScreen.storyboard */,
 				47441A6D2474103800D32271 /* Info.plist */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47441A642474102D00D32271 /* ViewController.swift in Sources */,
+				47441A90247412BC00D32271 /* questions.swift in Sources */,
 				47441A622474102D00D32271 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
