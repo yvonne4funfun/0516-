@@ -9,12 +9,14 @@
 import UIKit
 
 
+
 class ViewController: UIViewController {
     @IBOutlet weak var QLabel: UILabel!  //問題
     @IBOutlet weak var Alabel: UILabel!  //答案
     @IBOutlet weak var countLabel: UILabel!  //第幾題
     var index = 0  //宣告index儲存到第幾題
     var questions = [question]() //產生array將問題存在array裡
+ 
     
    
     
@@ -30,7 +32,7 @@ class ViewController: UIViewController {
         
         let question2 = question()
         question2.description = "最笨的恐龍？"
-        question2.answer = "劍龍"     
+        question2.answer = "劍龍"
         questions.append(question2)
         
         
@@ -62,7 +64,7 @@ class ViewController: UIViewController {
         
         questions.shuffle()
         QLabel.text = questions[0].description
-        
+        Alabel.isHidden = true
         
         
         
@@ -70,25 +72,27 @@ class ViewController: UIViewController {
     }
     @IBAction func AButton(_ sender: Any) {
         Alabel.text = questions[index].answer
+        Alabel.isHidden = false
     }
     @IBAction func NextButton(_ sender: Any) {
-        if index < questions.count-1{
-            index = index+1
-            
-        
+        index = index + 1
+        if index == questions.count{
+            index = 0
         }
+        if index < 5 {
+            countLabel.text = String(index+1)
         nextQuestion()
-        QLabel.text = questions[index].description
-        Alabel.text = ""
+        }
+        else {
+            questions.shuffle()
+            index = 0
+            countLabel.text = String(index+1)
+            nextQuestion()
+        }
+        Alabel.isHidden = true
         
     }
     func nextQuestion(){
-        
-        countLabel.text = "\(index+1)"
-        
-        
-        
-        
         QLabel.text = questions[index].description
         Alabel.text = questions[index].answer
         
